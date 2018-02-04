@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //Mark: Outlets
+    @IBOutlet weak var guessedNumber: UITextField!
+    @IBOutlet weak var labelMessage: UILabel!
+    
+    
+    //Mark:Properties
+    
+    //Mark: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+        //Mark:Actions
+    
+    @IBAction func checkGuess(_ sender: Any) {
+        print ("the guess was made")
+        print (guessedNumber.text)
 
-
+    }
+    
 }
 
